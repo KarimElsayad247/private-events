@@ -1,0 +1,9 @@
+<h1>Events</h1>
+
+<% if Event.count.zero? %>
+  <p>There are currently no events</p>
+<% end %>
+
+<div class="events-container">
+  <%= render @events %>
+</div>
