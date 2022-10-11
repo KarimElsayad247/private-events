@@ -1,0 +1,18 @@
+<h1><%= @event.title %></h1>
+
+<div class="card">
+  <h2>Location</h2>
+  <p><%= @event.location %></p>
+</div>
+
+<div class="card">
+  <h2>Date and time</h2>
+  <p><%= @event.date %></p>
+</div>
+
+<div class="card">
+  <h2>Organizer</h2>
+  <p>
+    <%= link_to @event.organizer.username, user_path(@event.organizer) %>
+  </p>
+</div>

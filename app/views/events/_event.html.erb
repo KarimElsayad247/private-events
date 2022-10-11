@@ -1,5 +1,7 @@
 <div class="event card">
-  <h2><%= event.title %></h2>
+  <h2>
+    <%= link_to event.title, event_path(event) %>
+  </h2>
   <p><strong>Location:</strong> <%= event.location %></p>
   <p><strong>Date and time:</strong> <%= event.date %></p>
   <p>
