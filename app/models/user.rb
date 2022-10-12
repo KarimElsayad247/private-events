@@ -12,10 +12,10 @@ class User < ApplicationRecord
             length: { in: 3..20 }
 
   def upcoming_attended_events
-    attended_events.where("date >= ?", DateTime.now)
+    attended_events.upcoming
   end
 
   def past_attended_events
-    attended_events.where("date < ?", DateTime.now)
+    attended_events.past
   end
 end
