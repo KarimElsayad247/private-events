@@ -10,4 +10,12 @@ class User < ApplicationRecord
 
   validates :username, presence: true, uniqueness: true,
             length: { in: 3..20 }
+
+  def upcoming_attended_events
+    attended_events.where("date >= ?", DateTime.now)
+  end
+
+  def past_attended_events
+    attended_events.where("date < ?", DateTime.now)
+  end
 end

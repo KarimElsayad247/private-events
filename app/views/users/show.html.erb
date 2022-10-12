@@ -6,9 +6,16 @@
   <%= render @user.organized_events %>
 </div>
 
-<h2 class="user-section-header">Attended Events</h2>
+<h2 class="user-section-header">Attending Events</h2>
 
 <div class="events-container">
   <%= render partial: "events/event",
-             collection: @user.attended_events %>
+             collection: @user.upcoming_attended_events %>
+</div>
+
+<h2 class="user-section-header">Past Events</h2>
+
+<div class="events-container">
+  <%= render partial: "events/event",
+             collection: @user.past_attended_events %>
 </div>
