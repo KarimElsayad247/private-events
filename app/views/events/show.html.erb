@@ -1,4 +1,7 @@
-<h1><%= @event.title %></h1>
+<div class="event-header">
+  <h1><%= @event.title %></h1>
+  <%= button_to "Attend", attend_event_path %>
+</div>
 
 <div class="card">
   <h2>Location</h2>

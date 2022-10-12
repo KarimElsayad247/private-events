@@ -5,3 +5,33 @@
 .event p {
     margin: 0.5rem;
 }
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.event-header h1 {
+    margin-top: 0;
+}
+
+.event-header form {
+    margin: 0;
+    padding: 0;
+}
+
+.event-header button {
+    width: auto;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #5995DA;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 6px 20px;
+    cursor: pointer;
+}
