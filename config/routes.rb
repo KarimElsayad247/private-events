@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :events, only: [:index, :new, :create, :show] do
     post 'attend', on: :member, to: 'attendance#create'
+    delete 'leave', on: :member, to: 'attendance#destroy'
   end
   resources :users, only: [:show]
 
