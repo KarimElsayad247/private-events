@@ -51,3 +51,14 @@ li {
 .user-section-header {
     margin-top: 1rem;
 }
+
+.button-like-link {
+    width: auto;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #5995DA;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 20px;
+    text-decoration: none;
+}
