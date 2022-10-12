@@ -39,3 +39,11 @@
 button.cancel {
     background-color: #da5959;
 }
+
+li {
+    list-style-type: none;
+}
+
+.event-detail {
+    margin-top: 1rem;
+}
