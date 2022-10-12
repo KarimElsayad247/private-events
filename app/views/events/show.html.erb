@@ -1,10 +1,16 @@
 <div class="event-header">
   <h1><%= @event.title %></h1>
-  <% if @event.attendees.exists?(current_user.id) %>
-    <%= button_to "Leave", leave_event_path, class: "cancel", method: :delete %>
+  <% if current_user.present? %>
+    <% if @event.attendees.exists?(current_user.id) %>
+      <%= button_to "Leave", leave_event_path, class: "cancel", method: :delete %>
+    <% else %>
+      <%= button_to "Attend", attend_event_path %>
+    <% end %>
   <% else %>
-    <%= button_to "Attend", attend_event_path %>
+    <%= link_to "Log in to Attend", new_user_session_path,
+        class: "button-like-link"%>
   <% end %>
+
 </div>
 
 <div class="card event-detail">
