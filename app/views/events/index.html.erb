@@ -1,9 +1,17 @@
 <h1>Events</h1>
 
-<% if Event.count.zero? %>
-  <p>There are currently no events</p>
+<h2 class="index-section-header">Upcoming Events</h2>
+
+<% if Event.upcoming.count.zero? %>
+  <p>There are currently no upcoming events</p>
 <% end %>
 
 <div class="events-container">
-  <%= render @events %>
+  <%= render @events.upcoming %>
+</div>
+
+<h2 class="index-section-header">Past Events</h2>
+
+<div class="events-container">
+  <%= render @events.past %>
 </div>
