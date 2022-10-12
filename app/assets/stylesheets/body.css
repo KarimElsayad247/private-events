@@ -11,18 +11,8 @@ body {
 header {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-}
-
-header a {
-    width: auto;
-    color: #FFFFFF;
-    font-weight: bold;
-    background-color: #5995DA;
-    border: none;
-    border-radius: 3px;
-    padding: 6px 20px;
-    text-decoration: none;
+    align-items: stretch;
+    float-wrap: wrap;
 }
 
 h1 {
