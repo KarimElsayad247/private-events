@@ -14,6 +14,10 @@ form .field{
     flex-direction: column;
 }
 
+form label:first-of-type {
+    margin-top: 0;
+}
+
 form textarea {
     margin-top: 0.5rem;
     width: 80%;
